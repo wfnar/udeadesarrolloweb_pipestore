@@ -1,0 +1,40 @@
+/* main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+image{
+    height: 30% !important;
+    width: auto !important;
+
+}
+
+.car{
+    height: auto;
+    max-height: 380px;
+}
+
+.carrito-compras{
+    
+    right: 0;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.carrito-compras-titulo{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.item-img{
+    height: 30px !important;
+}
+
+.productos{
+    display: flex;
+}
