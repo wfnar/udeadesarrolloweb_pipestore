@@ -7,7 +7,9 @@ function NavBar(props){
         <div className="container-fluid">  
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item nav-link">Perfil</li>
+              <li className="nav-item nav-link">
+                {props.linkA}
+              </li>
               <li className="nav-item nav-link">Carrito</li>
               <li className="nav-item nav-link">Historia de Compras</li>
               <li className="nav-item nav-link">Configuración</li>

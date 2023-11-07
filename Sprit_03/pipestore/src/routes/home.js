@@ -1,15 +1,12 @@
 import NavBar from "../components/navBar";
-import Cart from "../components/cart";
-import ProductList from "../components/products";
+import Eshop from "../components/eShop";
+import { Link } from "react-router-dom";
 
 
 function Home(){
     return <>
-        <NavBar canSearch={true}></NavBar>
-        <div className="container d-flex">
-            <ProductList></ProductList>
-            <Cart></Cart>
-        </div>
+        <NavBar canSearch={true} linkA={<Link to={"/login"}>Ir a Login</Link>}></NavBar>
+        <Eshop></Eshop>
     </>
 }
 
