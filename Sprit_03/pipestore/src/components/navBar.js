@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function NavBar(props){
@@ -25,7 +26,12 @@ function NavBar(props){
         )}
           <div>
             <button className="btn btn-primary">Logout</button>
-            <button className="btn btn-primary">Login</button>
+              <Link to={"/login"}>
+            <button className="btn btn-primary">
+              Login
+            </button>
+
+              </Link>
           </div>
 
           {/* <Cart /> */}
