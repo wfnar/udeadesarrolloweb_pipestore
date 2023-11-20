@@ -21,8 +21,11 @@ function Inicio(){
                             <div className="d-grid gap-3 col mx-auto">
                                 <Link className="d-grid gap-3 col mx-auto" to={"/registro"}>
                                     <button type="button" className="btn btn-primary">Registrate</button>
+                                </Link>
+                                <Link className="d-grid gap-3 col mx-auto" to={"/login"}>
+                                    <button type="button" className="btn btn-secondary ">Iniciar sesión</button>
                                 </Link>                           
-                                <button type="button" className="btn btn-secondary ">Iniciar sesión</button>
+                                
                             </div>
                         </div>
                         
