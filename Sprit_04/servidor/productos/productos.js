@@ -5,25 +5,33 @@ const jwt = require("jsonwebtoken");
 
 let productos = [
   {
-    name: "piña",
-    price: "7000",
-    units: 50,
+      name : 'Camisa Hombre',
+      price : 100000,
+      description : 'Camisa manga larga para hombre',
+      imagen: 'img/camisa.jpg',
+      cantidad: 100
   },
   {
-    name: "Manzana",
-    price: "2000",
-    units: 40,
+      name : 'Blusa',
+      price : 90000,
+      description : 'Blusa en diferentes colores',
+      imagen: 'img/blusa.jpg',
+      cantidad: 100
   },
   {
-    name: "Pera",
-    price: "2000",
-    units: 30,
+      name : 'Jean Hombre',
+      price : 150000,
+      description : 'Jean Hombre en diferentes tallas',
+      imagen: 'img/jeanhombre.jpg',
+      cantidad: 100
   },
   {
-    name: "Mango",
-    price: "5000",
-    units: 15,
-  },
+      name : 'Jean Mujer',
+      price : 170000,
+      description : 'Jean Mujer en diferentes tallas',
+      imagen: 'img/jeanmujer.jpg',
+      cantidad: 100
+  }
 ];
 router.get("/productos", (req, res) => {
   let token = req.headers["authorization"];

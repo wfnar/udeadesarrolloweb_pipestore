@@ -1,5 +1,3 @@
-// se instala nodemon y express 
-// se instala jsonwebtoken
 const express = require('express');
 const server = require('express')();
 const router = require('./productos/productos');
@@ -62,7 +60,7 @@ async function iniciarDB() {
     res.sendFile(path.resolve("./productos.html"));
   });
   server.post("/productos", async (req, res) => {
-    let result = await connection.db("icetex").collection("productos").insertOne(req.body);
+    let result = await connection.db("ecommerce").collection("productos").insertOne(req.body);
   
     res.send("Se guardo el producto");
   });
